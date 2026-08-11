@@ -1,10 +1,18 @@
-.testimonial {
-  max-width: 600px;
-  margin: 40px auto;
+.testimonials > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.testimonials > ul > li {
   padding: 24px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   text-align: center;
+  background-color: var(--background-color, #fff);
 }
 
 .testimonial-quote {
@@ -24,8 +32,7 @@
   margin-top: 8px;
 }
 
-/* boolean "featured" field toggles this, added by decorate() */
-.testimonial.featured {
+.testimonials > ul > li.featured {
   border-color: #fa0f00;
   border-width: 2px;
   background-color: #fff5f5;
