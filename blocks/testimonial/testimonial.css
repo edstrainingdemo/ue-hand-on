@@ -1,0 +1,32 @@
+.testimonial {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.testimonial-quote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #555555;
+}
+
+.testimonial-rating {
+  color: #f5a623;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* boolean "featured" field toggles this, added by decorate() */
+.testimonial.featured {
+  border-color: #fa0f00;
+  border-width: 2px;
+  background-color: #fff5f5;
+}
